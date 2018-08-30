@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    cursor: url('https://ionicframework.com/img/finger.png'), auto;
+}
+
+button{
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid;
+    height: 55px;
+    margin-left: 10px;
+    width: 55px;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: background-color 1s;
+}
+
+div.my_gallery{
+    /* background-color: pink; */
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid;
+    box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.719);
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: center;
+    margin: auto;
+    width: 300px;
+}
+
+h1 {
+    margin: 25px auto;
+    text-align: center;
+}
+
+img{
+    height: 350px;
+    width: 90%;
+    transition: 0.5s ease all;
+}
+/* infobulle css */
+
+
+button span{
+
+    font-size: 19px;
+   
+     margin-top:23px;
+     margin-left:-35px;
+        position:absolute;    
+      background:#000;
+     box-shadow:0 1px 0 rgba(255,255,255,.4);
+      color:#fff;
+     text-shadow:0 -1px 0 black;
+     transform:scale(0) rotate(-12deg);
+     display: block;
+     border-radius: 50px;
+     padding:5px;
+     opacity:0;
+     transition:all .25s;
+}
+
+
+
+button:hover span, button:focus span{
+     transform:scale(1) rotate(0);
+     opacity:1;        
+}
